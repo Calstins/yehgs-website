@@ -1,0 +1,36 @@
+* {
+  color: white;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+  background-color: #111011;
+}
+.card {
+  padding: 2rem;
+}
+
+.body,
+.mask {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: default;
+}
+
+.mask {
+  mask-image: url('./assets/mask.svg');
+  mask-repeat: no-repeat;
+  mask-size: 15px;
+  background: #fffb06;
+  position: absolute;
+  color: #111011;
+}
