@@ -26,7 +26,7 @@ const DownloadButton = () => {
       }}
     >
       <a download="Yehgs Co Ltd Company Profile" href={companyProfile}>
-        <span className="uppercase text-neutral-100 tracking-wide font-light h-full w-full block relative linear-mask text-sm md:text-xs">
+        <span className="uppercase text-neutral-100 tracking-wide font-light h-full w-full block relative linear-mask text-xs md:text-sm">
           download company profile
         </span>
         <span className="block absolute inset-0 rounded-md p-px linear-overlay" />
