@@ -1,6 +1,8 @@
 import React from 'react';
 import Logo from '../assets/yehgs-co-ltd.png';
 import Quote from '../components/Qoute';
+import { fadeIn } from '../utils/variants';
+import { motion } from 'framer-motion';
 
 const Header = () => {
   return (
@@ -9,10 +11,17 @@ const Header = () => {
         <img src={Logo} alt="company logo" className="w-[61px] h-[30px]" />
         <span className="text-4xl capitalize font-semibold">YEHGS</span>
       </div>
-      <Quote
-        text="The quality of a product or service alone does not guarantee success; it is the trust and loyalty forged between brand and consumer that sustains prosperity"
-        author="Immanuel Kant"
-      />
+      <motion.div
+        variants={fadeIn('down', 3)}
+        initial="hidden"
+        animate="show"
+        exit="hidden"
+      >
+        <Quote
+          text="The quality of a product or service alone does not guarantee success; it is the trust and loyalty forged between brand and consumer that sustains prosperity"
+          author="Immanuel Kant"
+        />
+      </motion.div>
     </div>
   );
 };

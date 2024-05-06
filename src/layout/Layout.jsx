@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import useMousePosition from '../utils/useMousePosition';
 import DownloadButton from '../components/DownloadButton';
+import { fadeIn } from '../utils/variants';
 
 const Layout = () => {
   const [isHovered, setIsHovered] = useState(false);
@@ -9,7 +10,13 @@ const Layout = () => {
   const size = isHovered ? 250 : 40;
   return (
     <div className="h-[100vh] flex flex-col justify-center items-center">
-      <div className="card flex justify-center items-center flex-col -mt-6">
+      <motion.div
+        className="card flex justify-center items-center flex-col -mt-6"
+        variants={fadeIn('up', 0.2)}
+        initial="hidden"
+        animate="show"
+        exit="hidden"
+      >
         <motion.div
           className="mask"
           animate={{
@@ -45,8 +52,15 @@ const Layout = () => {
             </p>
           </div>
         </div>
-      </div>
-      <DownloadButton className="" />
+      </motion.div>
+      <motion.div
+        variants={fadeIn('down', 1)}
+        initial="hidden"
+        animate="show"
+        exit="hidden"
+      >
+        <DownloadButton />
+      </motion.div>
     </div>
   );
 };
