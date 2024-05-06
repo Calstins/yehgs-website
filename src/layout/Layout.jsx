@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import useMousePosition from '../utils/useMousePosition';
 import DownloadButton from '../components/DownloadButton';
@@ -9,9 +9,9 @@ const Layout = () => {
   const { x, y } = useMousePosition();
   const size = isHovered ? 250 : 40;
   return (
-    <div className="h-[100vh] flex flex-col justify-center items-center">
+    <div className="h-full w-full flex flex-col justify-center items-center -mt-10">
       <motion.div
-        className="card flex justify-center items-center flex-col -mt-6"
+        className="card flex justify-center items-center flex-col"
         variants={fadeIn('up', 0.2)}
         initial="hidden"
         animate="show"
@@ -34,7 +34,7 @@ const Layout = () => {
               setIsHovered(false);
             }}
           >
-            <h1 className="font-bold text-[8rem] uppercase md:text-[10rem] text-ter">
+            <h1 className="font-bold text-[5rem] uppercase md:text-[10rem] text-ter">
               YEhgS
             </h1>
             <p className="-mt-4 text-xl md:text-2xl text-ter">
@@ -44,7 +44,7 @@ const Layout = () => {
         </motion.div>
         <div className="body">
           <div className="flex items-center justify-center flex-col">
-            <h1 className="font-bold text-[8rem] uppercase md:text-[10rem]">
+            <h1 className="font-bold text-[5rem] uppercase md:text-[10rem]">
               YEHgS
             </h1>
             <p className="-mt-4 text-xl md:text-2xl ">
@@ -58,6 +58,7 @@ const Layout = () => {
         initial="hidden"
         animate="show"
         exit="hidden"
+        className="mt-5 md:mt-0"
       >
         <DownloadButton />
       </motion.div>

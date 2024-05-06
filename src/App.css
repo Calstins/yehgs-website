@@ -4,16 +4,22 @@
   margin: 0;
 }
 
+body {
+  background-color: #111011;
+}
+
 .App {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   height: 100vh;
+  width: 100vw;
   background-color: #111011;
 }
 .card {
   padding: 2rem;
+  width: 100%;
 }
 
 .body,
@@ -33,4 +39,14 @@
   background: #fffb06;
   position: absolute;
   color: #111011;
+}
+
+/* mobil responsive */
+@media screen and (max-width: 375px) {
+  .card {
+    padding: 10px;
+  }
+  .copyright {
+    font-size: 8px;
+  }
 }

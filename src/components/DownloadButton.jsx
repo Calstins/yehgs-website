@@ -1,3 +1,4 @@
+import React from 'react';
 import { motion } from 'framer-motion';
 
 const DownloadButton = () => {
@@ -36,7 +37,7 @@ const DownloadButton = () => {
       }}
       onClick={handleDownload}
     >
-      <span className="uppercase text-neutral-100 tracking-wide font-light h-full w-full block relative linear-mask">
+      <span className="uppercase text-neutral-100 tracking-wide font-light h-full w-full block relative linear-mask text-sm md:text-xl">
         download company profile
       </span>
       <span className="block absolute inset-0 rounded-md p-px linear-overlay" />

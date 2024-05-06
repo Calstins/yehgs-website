@@ -7,9 +7,9 @@ import { fadeIn } from '../utils/variants';
 
 const Footer = () => {
   return (
-    <div className="card flex justify-between items-center w-full text-xs md:text-sm absolute bottom-0">
-      <CopyrightYear />
+    <div className="card flex justify-between items-center w-full text-xs md:text-sm absolute bottom-0 flex-col md:flex-row gap-4">
       <div className="flex justify-between items-center gap-8">
+        <Socials />
         <motion.div
           variants={fadeIn('down', 3.5)}
           initial="hidden"
@@ -18,8 +18,8 @@ const Footer = () => {
         >
           <GraduateProgram />
         </motion.div>
-        <Socials />
       </div>
+      <CopyrightYear className="copyright" />
     </div>
   );
 };

@@ -19,9 +19,9 @@ const GraduateProgram = () => {
     <motion.div
       whileHover={{ scale: 1.1 }}
       onClick={handleDownload}
-      className="flex hover:text-sec cursor-pointer"
+      className="flex justify-center items-center hover:text-sec cursor-pointer"
     >
-      Graduate Training Program
+      <span>Graduate Training Program</span>
       <img src={New} alt="new" className="w-[50px] h-[24px]" />
     </motion.div>
   );
