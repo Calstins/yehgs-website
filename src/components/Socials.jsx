@@ -13,7 +13,7 @@ const Socials = () => {
     <div className="flex items-center gap-x-5 text-lg">
       <motion.div whileHover={{ scale: 1.2 }}>
         <Link
-          to="https://web.facebook.com/profile.php?id=100095134207029"
+          to="https://www.facebook.com/people/Yehgs-Uk-International-Trade/100095134207029/"
           className="hover:text-sec transition-all duration-300"
           target="_blank"
         >
@@ -22,7 +22,7 @@ const Socials = () => {
       </motion.div>
       <motion.div whileHover={{ scale: 1.2 }}>
         <Link
-          to="https://www.linkedin.com/company/96283020/admin/feed/posts/"
+          to="https://www.linkedin.com/company/yehgs-uk-international-trade"
           className="hover:text-sec transition-all duration-300"
           target="_blank"
         >
@@ -31,7 +31,7 @@ const Socials = () => {
       </motion.div>
       <motion.div whileHover={{ scale: 1.2 }}>
         <Link
-          to="https://www.instagram.com/yehgscolimited/?next=%2F&hl=en"
+          to="https://www.instagram.com/yehgscolimited"
           className="hover:text-sec transition-all duration-300"
           target="_blank"
         >
