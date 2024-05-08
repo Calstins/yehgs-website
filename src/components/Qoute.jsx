@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 const Quote = ({ text, author }) => {
   return (
-    <div className=" w-[30vw] text-sm">
+    <div className=" md:w-[40vw] md:text-[10px] lg:text-[12px] lg:w-[30vw] text-sm">
       <blockquote className="italic font-thin">
         <p>{text}</p>
         <motion.footer whileHover={{ scale: 1.1 }} className="text-sec">

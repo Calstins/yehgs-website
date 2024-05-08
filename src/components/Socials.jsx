@@ -10,7 +10,7 @@ import { motion } from 'framer-motion';
 
 const Socials = () => {
   return (
-    <div className="flex items-center gap-x-5 text-lg">
+    <div className="flex justify-start  gap-x-5 text-lg  ">
       <motion.div whileHover={{ scale: 1.2 }}>
         <Link
           to="https://www.facebook.com/people/Yehgs-Uk-International-Trade/100095134207029/"

@@ -14,7 +14,7 @@ const GraduateProgram = () => {
         download="Graduate Training Program"
         className="flex justify-center items-center hover:text-sec cursor-pointer"
       >
-        <span>Graduate Training Program</span>
+        <span>Graduate Trainee Program</span>
         <img src={New} alt="new" className="w-[50px] h-[24px]" />
       </a>
     </motion.div>
