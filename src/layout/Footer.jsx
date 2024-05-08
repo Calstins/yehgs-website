@@ -15,6 +15,9 @@ const Footer = () => {
             Unit A51, The Mall, LUI 2TA Luton, <br />
             United Kingdom
           </p>
+          <a href="mailto:reception@yehgs.co.uk">reception@yehgs.co.uk</a>
+          <br />
+          <a href="tel:+447404493555">(+44)-7404-493555</a>
         </div>
         <div className="md:col-span-2 lg:col-span-1">
           <h1 className="uppercase text-sec mb-1">West African Office</h1>
@@ -23,6 +26,9 @@ const Footer = () => {
             <br />
             Nigeria
           </p>
+          <a href="mailto:reception@yehgs.co.uk">reception@yehgs.co.uk</a>
+          <br />
+          <a href="tel:+2347030292729">(+234)-7030-292729</a>
         </div>
       </div>
       <div className="lg:col-span-1 flex justify-between items-end  md:justify-end md:gap-4 md:col-span-1 text-[13px] md:text-[14px] gap-6">
