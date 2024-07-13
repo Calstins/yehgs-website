@@ -13,7 +13,7 @@ const CopyrightYear = () => {
     };
   }, []);
 
-  return <span>&copy; {currentYear} YEGHS CO LTD. All Rights Reserved.</span>;
+  return <span>&copy; {currentYear} YEHGS CO LTD. All Rights Reserved.</span>;
 };
 
 export default CopyrightYear;
